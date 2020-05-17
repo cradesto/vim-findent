@@ -1,4 +1,4 @@
-# vim_findent
+# vim-findent
 Vim plugin for Findent (indent fortran sources)
 
 https://www.ratrabbit.nl/ratrabbit/content/sw/findent/introduction
