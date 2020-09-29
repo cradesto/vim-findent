@@ -92,7 +92,7 @@ augroup fortfiletype
    autocmd Filetype fortran setlocal autoindent
 
    " define statusline
-   autocmd Filetype fortran setlocal statusline=%<%t\ %m\ %r\ %y\ %{Get_fortran_format()}\ %{Get_findent_use_whole_buffer()}%=%l\ %c\ %LL\ %P
+   autocmd Filetype fortran setlocal statusline=%<%t\ %m\ %r\ %y\ %{Get_fortran_format()}\ %{Get_findent_use_whole_buffer()}%=format=%{&fileformat}\ file=%{\"\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"\"}\ enc=%{&encoding}\ %b\ 0x%B\ %l,%c%V\ %LL\ %P
 
    " define toggle: use whole buffer for indenting or not
    autocmd Filetype fortran nnoremap <buffer> <LocalLeader>w :call Findent_use_wb_toggle()<Return>
